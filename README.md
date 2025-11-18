@@ -24,8 +24,8 @@ So one day I asked myself:
 > 
 > and make it clean, fast, and easy for everyone?”**  
 
-I experimented, rebuilt, upgraded, and tested again and again — and this **Ultra Pro version** was finally born.
-https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif https://user-images.githubusercontent.com/74038190/212257460-738ff738-247f-4445-a718-cdd0ca76e2db.gif  https://private-user-images.githubusercontent.com/74038190/238200426-29fd6286-4e7b-4d6c-818f-c4765d5e39a9.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjM0NjgwNDEsIm5iZiI6MTc2MzQ2Nzc0MSwicGF0aCI6Ii83NDAzODE5MC8yMzgyMDA0MjYtMjlmZDYyODYtNGU3Yi00ZDZjLTgxOGYtYzQ3NjVkNWUzOWE5LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTExMTglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMTE4VDEyMDkwMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTliY2I3ZWVhNDk3ZjZiODYwNWVjNmRmMjU3ZGI2Mjc3YTA3YTlhY2U2MjQyZDFkNDVkYmVhYWI4ZTQ2NjEyYWMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.aZmkq4vA6gMBF_FqTdFEbzg2C8K7F2Y3uESsvEm3CSk
+I experimented, rebuilt, upgraded, and tested again and again — and this ** Resistor Pro -v1.9.** was finally born.
+
 This project represents:
 - My creativity  
 - My learning journey  
@@ -33,7 +33,6 @@ This project represents:
 - My love for electronics + coding  
 
 And now I’m sharing it with the world as open-source. 🚀
-
 ---
 
 # 🚀 Features (Resistor Pro -v1.9. -zeno)
