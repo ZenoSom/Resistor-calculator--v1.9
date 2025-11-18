@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resistor Pro — Advanced Resistor Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div>
+        <h1>Resistor Pro -v1.9. -zeno</h1>
+        <p class="muted">Advanced resistor color-code calculator — live color preview, reverse calc, dark mode & save favorites</p>
+      </div>
+      <div class="header-actions">
+        <label class="toggle">
+          <input id="darkToggle" type="checkbox" />
+          <span>Dark</span>
+        </label>
+        <button id="printBtn" class="btn">Print  / PDF</button>
+      </div>
+    </header>
+
+    <main class="main-grid">
+      <section class="panel">
+        <h2>Mode</h2>
+        <div class="row">
+          <label><input type="radio" name="mode" value="forward" checked /> Forward (colors → value)</label>
+          <label><input type="radio" name="mode" value="reverse" /> Reverse (value → colors)</label>
+        </div>
+
+        <h2>Bands</h2>
+        <div class="row">
+          <label><input type="radio" name="bands" value="4" checked /> 4-band</label>
+          <label><input type="radio" name="bands" value="5" /> 5-band</label>
+          <label><input type="radio" name="bands" value="6" /> 6-band</label>
+        </div>
+
+        <div id="controlsArea"></div>
+
+        <div class="row" style="margin-top:12px;">
+          <button id="calcBtn" class="btn large">Calculate</button>
+          <button id="clearBtn" class="btn ghost">Clear</button>
+        </div>
+
+        <h2 style="margin-top:18px">Favorites</h2>
+        <div id="favorites" class="favorites"></div>
+        <div class="row" style="margin-top:8px;">
+          <input id="favName" placeholder="Favorite name" />
+          <button id="saveFav" class="btn">Save Favorite</button>
+          <button id="clearFavs" class="btn ghost">Clear All</button>
+        </div>
+      </section>
+
+      <section class="panel preview">
+        <div class="resistor-wrap">
+          <svg id="resistorSVG" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="glass" x1="0" x2="1">
+                <stop offset="0" stop-color="#fafafa" stop-opacity="0.08"/>
+                <stop offset="1" stop-color="#000" stop-opacity="0.02"/>
+              </linearGradient>
+            </defs>
+            <rect x="20" y="40" width="560" height="40" rx="20" fill="#e9c46a" stroke="#b07b2a" stroke-width="2"/>
+            <!-- bands group (we will overlay colored rectangles) -->
+            <g id="bandsGroup"></g>
+            <line x1="0" y1="60" x2="20" y2="60" stroke="#777" stroke-width="6" stroke-linecap="round"/>
+            <line x1="580" y1="60" x2="600" y2="60" stroke="#777" stroke-width="6" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <div class="result-card">
+          <h3>Result</h3>
+          <div id="resultValue" class="big">—</div>
+          <div id="resultTolerance" class="small muted">Tolerance: —</div>
+          <div id="resultRange" class="small muted">Range: —</div>
+        </div>
+
+        <div class="row actions" style="margin-top:12px">
+          <button id="exportCSV" class="btn ghost">Export CSV</button>
+          <button id="copyBtn" class="btn ghost">Copy Value</button>
+        </div>
+
+        <div class="card notes">
+          <h4>Notes</h4>
+          <ul>
+            <li>Supports 4,5,6 band resistors. Pick mode to calculate forward or reverse.</li>
+            <li>Colors update live as you change selections.</li>
+            <li>Save favorites to local storage for quick reuse.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
