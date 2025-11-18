@@ -34,6 +34,7 @@ This project represents:
 
 And now I’m sharing it with the world as open-source. 🚀
 ---
+![Uploading Screenshot 2025-11-18 at 5.42.31 PM.png…]()
 
 # 🚀 Features (Resistor Pro -v1.9. -zeno)
 
