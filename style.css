@@ -33,3 +33,26 @@ select, input[type="text"], input[type="number"]{padding:8px;border-radius:8px;b
 .notes{font-size:14px}
 .dark{--bg:#061018;--panel:#071826;color:#e6eef6;--muted:#9aa4b2}
 @media(max-width:900px){.main-grid{grid-template-columns:1fr;}.header{flex-direction:column;align-items:flex-start;gap:12px}}
+.social-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 40px 0 60px 0;
+  position: relative;
+  z-index: 3;
+}
+
+.social-footer img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px rgba(255,255,255,0.4));
+  transition: transform 0.25s ease;
+}
+
+.social-footer img:hover {
+  transform: scale(1.18);
+}
+
+
